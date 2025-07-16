@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product card design</title>
+
+    <style>
+        .card{
+            position: relative;
+            width: 380px;
+            background: #fafafa;
+            box-shadow: 0 2px 7px #dfdfdf;
+            font-family: sans-serif;
+        }
+        .badge{
+            position: absolute;
+            background: red;
+            color: #fff;
+            left: 0;
+            top: 20px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 3px 10px;
+            width: 80px;
+            text-align: center;
+        }
+        .product-image{
+            height: 300px;
+            background: #f0f0f0;
+            display: grid;
+            place-items: center ;
+
+        }
+        .product-image img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .details{
+            padding: 30px;
+        }
+        .details .catagory{
+            display: block;
+            color: #ccc;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        .details h4 a{
+            font-weight: 500;
+            color: #363636;
+            display: block;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .details h4 a:hover{
+            color: #fbb72c;
+        }
+        p{
+            color : #999;
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 18px;
+        }
+         .price{
+            color: #fbb72c;
+            font-size: 28px;
+            overflow: hidden;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        .price small{
+            color: #999;
+            font-size: 80%;
+            text-decoration: line-through;
+            font-weight: 400;
+            display: inline-block;
+        }
+        .links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .links a{
+            color: #e1e1e1;
+            margin-left: 5px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        .links a:hover{
+            color: #fbb72c;
+        }
+        .buy-now button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fbb72c;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.buy-now button:hover {
+  background-color: #e0a326;
+}
+
+      
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge"> Offer </div>
+        <div class="product-image">
+            <img src="download.jpeg" alt="Bag image">
+        </div>
+        <div class="details">
+            <span class="catagory"> Women, Bag</span>
+            <h4>
+                <a href="#">Women Leather Bag</a>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quasi?</p>
+            <div class="price">
+                <small>$120.00</small>$230.00</div>
+            <div class="links">
+                <a href="#">Add to cart</a>
+                <a href="#">View details</a>
+            </div>
+            <div class="buy-now">
+                <button>Buy Now</button>
+              </div>
+        </div>
+    </div>
+</body>
+</html>
